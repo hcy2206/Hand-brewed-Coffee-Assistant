@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/api/calculate", "destination": "/api" },
-    { "source": "/(.*)", "destination": "/public/$1" }
-  ]
+    { "source": "/api/calculate", "destination": "/api" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
