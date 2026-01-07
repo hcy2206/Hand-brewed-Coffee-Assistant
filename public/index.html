@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手冲咖啡计算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>手冲咖啡计算器</h1>
+
+        <div class="input-group">
+            <label for="coffee-weight">咖啡粉重量 (克)</label>
+            <input type="number" id="coffee-weight" value="15" min="1" max="100" step="0.1">
+        </div>
+
+        <div class="input-group">
+            <label for="ratio">粉水比</label>
+            <select id="ratio">
+                <option value="15">1:15 浓郁</option>
+                <option value="16" selected>1:16 均衡</option>
+                <option value="17">1:17 清爽</option>
+                <option value="18">1:18 淡雅</option>
+            </select>
+        </div>
+
+        <button id="calculate-btn">计算</button>
+
+        <div id="result" class="result hidden">
+            <h2>注水方案</h2>
+            <p class="total-water">总水量：<span id="total-water">0</span> 克</p>
+            <ul id="stages-list"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #FDF6E9;
+    color: #3C2415;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    background: #FFFBF5;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(60, 36, 21, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #3C2415;
+    font-size: 1.75rem;
+    margin-bottom: 28px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.95rem;
+    color: #6F4E37;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 2px solid #E8DFD5;
+    border-radius: 12px;
+    background: #FFFBF5;
+    color: #3C2415;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #6F4E37;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFFBF5;
+    background: #6F4E37;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #3C2415;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.result {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 2px solid #E8DFD5;
+}
+
+.result.hidden {
+    display: none;
+}
+
+.result h2 {
+    font-size: 1.25rem;
+    color: #3C2415;
+    margin-bottom: 16px;
+}
+
+.total-water {
+    font-size: 1.1rem;
+    color: #6F4E37;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.total-water span {
+    color: #3C2415;
+    font-size: 1.3rem;
+}
+
+#stages-list {
+    list-style: none;
+}
+
+#stages-list li {
+    background: #FDF6E9;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+#stages-list li:last-child {
+    margin-bottom: 0;
+}
+
+.stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.stage-name {
+    font-weight: 600;
+    color: #3C2415;
+}
+
+.stage-time {
+    font-size: 0.85rem;
+    color: #6F4E37;
+}
+
+.stage-water {
+    font-size: 1.1rem;
+    color: #6F4E37;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.stage-instruction {
+    font-size: 0.9rem;
+    color: #8B7355;
+    line-height: 1.4;
+}
