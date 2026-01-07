@@ -32,7 +32,7 @@ class CoffeeOutput(BaseModel):
     stages: list[PourStage]
 
 
-@app.post("/")
+@app.post("/api/calculate")
 def calculate(data: CoffeeInput) -> CoffeeOutput:
     total_water = data.coffee_weight * data.ratio
 
