@@ -1,7 +1,8 @@
 {
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "framework": null,
   "rewrites": [
-    { "source": "/api/calculate", "destination": "/api" }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+    { "source": "/api/(.*)", "destination": "/api" }
+  ]
 }
